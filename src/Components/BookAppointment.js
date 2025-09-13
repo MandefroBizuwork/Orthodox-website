@@ -1,6 +1,8 @@
 import React from "react";
 import Doctor from "../Assets/doctor-book-appointment.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faFacebook, faTelegram, faYoutube,faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {
   faCircleCheck,
   faCalendarCheck,
@@ -16,33 +18,50 @@ function BookAppointment() {
   };
 
   return (
-    <div className="ba-section">
+    <div className="ba-section shadow my-2">
       <div className="ba-image-content">
-        <img src={Doctor} alt="Doctor Group" className="ba-image1" />
-      </div>
+  <div style={{ width: "100%", height: "400px" }}>
+    <iframe
+      title="google-map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.2847575749847!2d38.75881937572444!3d9.037768088850145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f4658bd2561%3A0x435e620b7cd166e5!2zTWFoaWJlcmUgS2lkdXNhbiBCdWlsZGluZyB8IDUgS2lsbyB8IOGIm-GIheGJoOGIrSDhiYXhi7HhiLPhipUg4YiF4YqV4Yy7IHwgNSDhiqrhiI4!5e0!3m2!1sam!2set!4v1757748310826!5m2!1sam!2set"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+
 
       <div className="ba-text-content">
         <h3 className="ba-title">
-          <span>Why Choose Health</span>
+          <span>ያግኙን</span>
         </h3>
         <p className="ba-description">
-          Discover the reasons to choose Health Plus for your healthcare needs.
-          Experience expert care, convenience, and personalized solutions,
-          making your well-being our top priority. Join us on a journey to
-          better health and a happier life.
+          በሚከተሉት የሶሻል ሚዲያዎች ያገኙናል
         </p>
 
         <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Best Professional Doctors
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> <a href="https://web.facebook.com/profile.php?id=100082860816745" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFacebook} color="#1877F2" />
+      </a>Facebook
         </p>
-        <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Emergency Care
+       <p className="ba-checks ba-check-first">
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faTelegram} color="#1877F2" />
+      </a>Telegram
         </p>
-        <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> 24/7 Support Live Chat
+         <p className="ba-checks ba-check-first">
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faYoutube} color="#1877F2" />
+      </a>Youtube
         </p>
-        <p className="ba-checks ba-check-last">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Enrollment Easy and Quick
+         <p className="ba-checks ba-check-first">
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} color="#1877F2" />
+      </a>Instagram
         </p>
 
         <button

@@ -5,7 +5,31 @@
     align-items: center;
     height: 80px;
     background-color: white;
+
+    /* FIXED at the top always */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+    /* Animation */
+    transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
 }
+
+/* Slide out when scrolling down */
+.navbar-section.hide {
+    transform: translateY(-100%);
+}
+
+/* Slide back in when scrolling up */
+.navbar-section.show {
+    transform: translateY(0);
+}
+
+
 .navbar-title a {
     color: #1A8EFD;
     letter-spacing: .6px;

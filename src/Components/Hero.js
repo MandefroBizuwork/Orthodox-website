@@ -1,88 +1,113 @@
-import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/doctor-picture.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "../Styles/Hero.css";
 
-function Hero() {
-  const navigate = useNavigate();
-  const [goUp, setGoUp] = useState(false);
+const slides = [
+  {
+    id: 1,
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    title: "ደ/መ/ ቅዱስ አማኑኤል የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስቲያን በርሚንግሃም ዩናይትድ ኪንግደም",
+    description:
+      "በኤማሁስ ዘንድ የሚነሡት ርእሶች እና የሚቀርቡበት መንገድ የሚስማምዎ እና እርስዎም በመድረኩ ላይ በሚደረገው ተዋሥኦ ለመሳተፍ የሚወዱ እና የሚፈቅዱ ቢሆን ያለመዘግየት በፈቀዱት ርእስ ጽሑፎችን ጽፈው ያጋሩን ።",
+    buttonText: "ያግኙን",
+    image: require("../Assets/og.jpg"),
+  },
+  {
+    id: 2,
+   
+    title: "ደ/መ/ ቅዱስ አማኑኤል የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስቲያን በርሚንግሃም ዩናይትድ ኪንግደም",
+    description:
+      "በኤማሁስ ዘንድ የሚነሡት ርእሶች እና የሚቀርቡበት መንገድ የሚስማምዎ እና እርስዎም በመድረኩ ላይ በሚደረገው ተዋሥኦ ለመሳተፍ የሚወዱ እና የሚፈቅዱ ቢሆን ያለመዘግየት በፈቀዱት ርእስ ጽሑፎችን ጽፈው ያጋሩን ።",
+    buttonText: "ያግኙን",
+    image: require("../Assets/1.jpg"),
+  },
+  {
+    id: 3,
+   
+    title: "ደ/መ/ ቅዱስ አማኑኤል የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስቲያን በርሚንግሃም ዩናይትድ ኪንግደም",
+    description:
+      "በኤማሁስ ዘንድ የሚነሡት ርእሶች እና የሚቀርቡበት መንገድ የሚስማምዎ እና እርስዎም በመድረኩ ላይ በሚደረገው ተዋሥኦ ለመሳተፍ የሚወዱ እና የሚፈቅዱ ቢሆን ያለመዘግየት በፈቀዱት ርእስ ጽሑፎችን ጽፈው ያጋሩን ።",
+    buttonText: "ያግኙን",
+    image: require("../Assets/2.jpg"),
+  },
+  {
+     id: 4,
+   
+    title: "ደ/መ/ ቅዱስ አማኑኤል የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስቲያን በርሚንግሃም ዩናይትድ ኪንግደም",
+    description:
+      "በኤማሁስ ዘንድ የሚነሡት ርእሶች እና የሚቀርቡበት መንገድ የሚስማምዎ እና እርስዎም በመድረኩ ላይ በሚደረገው ተዋሥኦ ለመሳተፍ የሚወዱ እና የሚፈቅዱ ቢሆን ያለመዘግየት በፈቀዱት ርእስ ጽሑፎችን ጽፈው ያጋሩን ።",
+    buttonText: "ያግኙን",
+    image: require("../Assets/3.jpg"),
+}
+];
+
+function HeroCarousel() {
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
   };
 
-  const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
   useEffect(() => {
-    const onPageScroll = () => {
-      if (window.scrollY > 600) {
-        setGoUp(true);
-      } else {
-        setGoUp(false);
-      }
-    };
-    window.addEventListener("scroll", onPageScroll);
-
-    return () => {
-      window.removeEventListener("scroll", onPageScroll);
-    };
+    const interval = setInterval(nextSlide, 4000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="section-container">
-      <div className="hero-section">
-        <div className="text-section">
-          <p className="text-headline">❤️ Health comes first</p>
-          <h2 className="text-title">
-            Find your Doctor and make an Appointments
-          </h2>
-          <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
-          </p>
-          <button
-            className="text-appointment-btn"
-            type="button"
-            onClick={handleBookAppointmentClick}
-          >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
-          </button>
-          <div className="text-stats">
-            <div className="text-stats-container">
-              <p>145k+</p>
-              <p>Receive Patients</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>50+</p>
-              <p>Expert Doctors</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>10+</p>
-              <p>Years of Experience</p>
-            </div>
-          </div>
+    <section className="hero-carousel">
+      {slides.map((slide, index) => (
+        <div
+          key={slide.id}
+          className={`carousel-slide ${index === current ? "active" : ""}`}
+          style={{ backgroundImage: `url(${slide.image})` }}
+        >
+          <div className="overlay"></div>
+       <div className="carousel-card">
+        <div className="carousel-content">
+          <p className="headline">{slide.headline}</p>
+          <h1 className="title">{slide.title}</h1>
+          <h3 className="description">{slide.description}</h3>
+          <h4 className="details">{slide.details}</h4>
+          <button className="cta-btn">{slide.buttonText}</button>
         </div>
-
-        <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+        <div className="carousel-image">
+          <img src={slide.image} alt={slide.title} />
         </div>
       </div>
 
-      <div
-        onClick={scrollToTop}
-        className={`scroll-up ${goUp ? "show-scroll" : ""}`}
-      >
-        <FontAwesomeIcon icon={faAngleUp} />
+
+        </div>
+      ))}
+
+      {/* Navigation Arrows */}
+      <button className="nav-btn left" onClick={prevSlide}>
+        &#10094;
+      </button>
+      <button className="nav-btn right" onClick={nextSlide}>
+        &#10095;
+      </button>
+
+      {/* Dots */}
+      <div className="dots">
+        {slides.map((_, i) => (
+          <span
+            key={i}
+            className={`dot ${i === current ? "active" : ""}`}
+            onClick={() => setCurrent(i)}
+          ></span>
+        ))}
       </div>
-    </div>
+       <div className="hero-curve">
+       <svg  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+       <path stroke="none"  fill="white" d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="_shape-fill_13pfy_228">
+        </path>
+       </svg>
+      </div>
+    </section>
   );
 }
 
-export default Hero;
+export default HeroCarousel;

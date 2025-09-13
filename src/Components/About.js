@@ -1,42 +1,50 @@
 import React from "react";
-import Doctor from "../Assets/doctor-group.png";
+import Doctor from "../Assets/church.jfif";
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 
 function About() {
   return (
-    <div className="about-section" id="about">
+    <div className="about-section shadow my-2" id="about">
       <div className="about-image-content">
         <img src={Doctor} alt="Doctor Group" className="about-image1" />
       </div>
 
       <div className="about-text-content">
         <h3 className="about-title">
-          <span>About Us</span>
+          <span>ስለ ማኅበሩ መሰረታዊ መረጃዎች</span>
         </h3>
+        <SolutionStep
+          title="ስያሜ"
+          description="ማኅበረ ቅዱሳን እግዚአብሔር ያከበራቸው የነቢያት፣ የሐዋርያት፣ የጻድቃንና የሰማዕታት በአጠቃላይ የቅዱሳን ገድል፣ ትሩፋትና አማላጅነት የሚዘከርበት በመሆኑ ‹‹ማኅበረ ቅዱሳን›› የሚል ስያሜውን አግኝቷል፡፡"
+        />
+
+        <SolutionStep
+          title="የማኅበሩ ርእይ"
+          description="ቤተ ክርስቲያን ሁለንተናዊ የመሪነት ሚናዋን ስትወጣ ማየት::"
+        />
+
+        <SolutionStep
+          title="ተልእኮ"
+          description="ለቤተ ክርስቲያን ተልእኮ መሳካት እና ለሕልውናዋ የሚተጋ፣ የተደራጀ ፣ ምሉዕ ኦርቶዶክሳዊ፤ ርቱዕ ዘመናዊ፤ ሁለገብ መሪ ትውልድ ማፍራት እና ማሰማራት"
+        />
+
         <p className="about-description">
-          Welcome to Health Plus, your trusted partner for accessible and
-          personalized healthcare. Our expert doctors offer online consultations
-          and specialized services, prioritizing your well-being. Join us on
-          this journey towards a healthier you.
-        </p>
+          <h3>ዓላማዎች</h3>
+          <hr/>
+          <ul className="abautlist">
+          <li>የቤተ ክርስቲያን ተቋማዊ አስተዳደር፣ የአሠራር ሥርዐትና አስተሳሰብ፣ በቴክኖሎጂ እና በልዩ ልዩ መንገዶች በመደገፍ ዘመኑን ለዋጀ ጠንካራ አገልግሎት ማብቃት፤</li>
+          <li>የከፍተኛ ትምህርት ተቋማት ተማሪዎችን ሙሉ ሰብእናን የሚገነባ ሥርዐተ ትምህርት በማስተማር ዘመኑን የዋጁ ምሉዕ ኦርቶዶክሳዊ የሆኑ በቤተ ክርስቲያን አስተዳደራዊ መዋቅር የሚያገለግሉ እንዲሁም በማኅበራዊ፣ በኢኮኖሚያዊ በፖለቲካዊ እና በሀገር አስተዳደር ጉዳዮች መሪ/ንቁ ተሳታፊ አገልጋዮችን ማፍራት እና ማሠማራት፤</li>
+          <li>የተተኪውን ትውልድ ምንጭ ለማጎልበት የሰ/ት/ቤቶችን አቅም በማጠናከር የሕጻናት እና የወጣቶችን የተተኪነት ሚና ማሳደግ፤</li>
+          <li>ኦርቶዶክሳዊ መንፈሳዊነትን በተግባር የሚገልጽ ቤተሰብ እና አንድነቱን የጠበቀ ኦርቶዶክሳዊ ማኅበረሰብ በመገንባት የተደራጀ እና የተናበበ አገልግሎት መስጠት፤</li>
+          <li>በተደራጀ እና ተደራሹን ማእከል ባደረገ መንገድ ስብከተ ወንጌልንና ሐዋርያዊ ተልእኮን ዘርፈ ብዙ በሆኑ መንገዶች በመላው ዓለም ማስፋፋት፤</li>
+          <li>በቤተ ክርስቲያን ላይ የሚነዙትን የርእዮተ ዓለም፣ የሐሰት ትርክቶች እና የአጽራረ ቤተ ክርስቲያንን እንቅስቃሴ ጥናት እና ምርምር ላይ ተመርኩዞ መሞገት እና የተሳሳቱትን በማረም፣ በጠንካራ የዕቅበተ እምነት አገልግሎት የቤተ ክርስቲያንን ሕልውና ማስጠበቅ፤</li>
+          <li>በተመረጡ ገዳማት እና አብነት ትምህርት ቤቶች የልኅቀት ማእከል እና የተለየ ክርስቲያናዊ ተልእኮ የሚፈጽሙ እንዲሆኑ የሚያስችል ሁለገብ የአእምሮ ልማት ድጋፍ ማድረግ፤</li>
+          <li>ማኅበሩ ዘመኑን የዋጀ ተቋማዊ የአሠራር ሥርዓት በመዘርጋት ተልእኮውን ማሳካት የሚችልበት አቅም መፍጥር ( በአመራር፣ በሰው ኃይል፣ በመንፈሳዊነት፣ በግንኙነት፣ በዕውቀት፣በልማት፣ በፋይናንስ፣ በቴክኖሎጂ)፤</li>
+          <li>ዓለም አቀፍ ግንኙነትና የትብብር አገልግሎትን መርሕ ያደረገ የኦርቶዶክሳውያን ኢኮኖሚያዊ፣ ማኅበራዊና ፖለቲካዊ ተሳትፎ ማሳደግ፣</li>
+          </ul>
+       </p>
 
-        <h4 className="about-text-title">Your Solutions</h4>
-
-        <SolutionStep
-          title="Choose a Specialist"
-          description="Find your perfect specialist and book with ease at Health Plus. Expert doctors prioritize your health, offering tailored care."
-        />
-
-        <SolutionStep
-          title="Make a Schedule"
-          description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
-        />
-
-        <SolutionStep
-          title="Get Your Solutions"
-          description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
-        />
       </div>
     </div>
   );

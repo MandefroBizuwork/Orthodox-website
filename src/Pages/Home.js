@@ -7,16 +7,22 @@ import BookAppointment from "../Components/BookAppointment";
 import Reviews from "../Components/Reviews";
 import Doctors from "../Components/Doctors";
 import Footer from "../Components/Footer";
+import Featured from "../Components/Featured";
+
+
+
 
 function Home() {
   return (
-    <div className="home-section">
+<div className="home-section ">
+
       <Navbar />
-      <Hero />
+      <Hero />      
       <Info />
+      <Featured/>
       <About />
       <BookAppointment />
-      <Reviews />
+      {/* <Reviews /> */}
       <Doctors />
       <Footer />
     </div>

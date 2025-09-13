@@ -1,10 +1,21 @@
 .about-section {
     padding: 32px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;   
     gap: 24px;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    background: white;   
+  
+}
+.abautlist{
+list-style-type:  disc !important;
+ padding-Left: "20px" !important;
+}
+.abautlist li{
+    margin: 10px 1px;
+}
+.abautlist  li::marker{
+     color: black !important;;   /* bullet color */
+  font-size: 1.2em !important;; /* optional: make the dot larger */
 }
 /* Image */
 .about-image-content {
@@ -20,18 +31,22 @@
 .about-text-content {
     width: 50%;
 }
+.about-text-content .syame{
+    margin-top: 30px;
+}
 .about-title {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: bold;
 }
+
 .about-title > span {
     position: relative;
 }
 .about-title span::before {
     content: '';
     position: absolute;
-    width: 75%;
+    width: 100%;
     height: 4px;
     background-color: #9D2553;
     border-radius: 8px;

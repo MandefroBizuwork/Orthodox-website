@@ -5,19 +5,19 @@ import "../Styles/Info.css";
 
 function Info() {
   return (
-    <div className="info-section" id="services">
+    <div className="info-section shadow my-2" id="services">
+        
       <div className="info-title-content">
         <h3 className="info-title">
-          <span>What We Do</span>
+          <span>የቅርብ ጊዜ</span>
         </h3>
         <p className="info-description">
-          We bring healthcare to your convenience, offering a comprehensive
-          range of on-demand medical services tailored to your needs. Our
-          platform allows you to connect with experienced online doctors who
-          provide expert medical advice, issue online prescriptions, and offer
-          quick refills whenever you require them.
+        የሰውን ልጅ የውድቀት ታሪክ ስንመለከት፣ የመጀመሪያው መንሥኤ የክፉ ምክር ውጤት እንደሆነ እንረዳለን። አባታችን አዳም የእግዚአብሔርን ሕግ ጠብቆ ለሰባት ዓመታት ያህል በገነት ቢኖርም፣ በሰይጣን ክፉ ምክር ተታሎ እግዚአብሔርን ያህል ጌታ ገነትን የመሰለ ቦታ አጥቷል። ይህ የሆነው በክፉ ምክር ምክንያት ነው። ዛሬም በዚህች ምድር፣ እንደ ጥንቱ ሁሉ፣ በማወቅም ሆነ ባለማወቅ በክፉ ምክር የሚያታልሉና ላልተገባ ነገር የሚዳርጉ ክፉ አማካሪዎች አይጠፉም።
+
+በተቃራኒው ደግሞ ለበጎ ነገር የሚያነሣሱ፣ ትክክለኛውን መንገድ የሚያሳዩ፣ መርተው ወደ እግዚአብሔር የሚያደርሱ እንደ ሐዋርያው ፊልጶስ ያሉ መልካም አማካሪዎችና የልብ ወዳጆችም ብዙ ናቸው። (ዮሐ ፩፥፵፮-፶፩)
         </p>
       </div>
+   
 
       <div className="info-cards-content">
         <InformationCard
