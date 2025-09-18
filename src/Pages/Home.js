@@ -8,6 +8,8 @@ import Reviews from "../Components/Reviews";
 
 import Footer from "../Components/SharedLayout/Footer/Footer";
 import Featured from "../Components/Featured";
+import NewsSection from "../Components/NewsSection";
+import Leaders from "../Components/Leaders";
 
 function Home() {
   return (
@@ -17,28 +19,15 @@ function Home() {
       </header> */}
 
       <main>
-        <Hero />
-        <section id="info" className="py-5">
-          <Info />
-        </section>
+        <Hero />       
+        <NewsSection/>      
+        <About /> 
+        <Leaders />   
+        <Featured />
+        <Contactus />
+           
+       
 
-        <section id="about" className="py-5 bg-light">
-          <About />
-        </section>
-
-        <section id="featured" className="py-5">
-          <Featured />
-        </section>
-
-      
-
-        {/* <section id="reviews" className="py-5">
-          <Reviews />
-        </section> */}
-
-        <section id="contact" className="py-5 bg-light">
-          <Contactus />
-        </section>
       </main>
 
 

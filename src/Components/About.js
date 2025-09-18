@@ -6,12 +6,13 @@ import "../Styles/About.css";
 function About() {
   return (
     <div className="about-section shadow my-2 py-5" id="about">
+      
       <div className="about-image-content col-lg-6 mb-4 mb-lg-0">
        
         <img src={Doctor} alt="Doctor Group" className="about-image1 img-fluid rounded shadow" />
       </div>
 
-      <div className="about-text-content bg-opacity-50 p-5 rounded" style={{backgroundColor:"#a2bfdd80"}}>
+      <div className="about-text-content bg-opacity-50 p-5 rounded" style={{backgroundColor:"rgb(228 230 231 / 50%)"}}>
         <h3 className="about-title">
           <span>ስለ ማኅበሩ መሰረታዊ መረጃዎች</span>
         </h3>

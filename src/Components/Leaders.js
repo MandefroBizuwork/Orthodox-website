@@ -4,11 +4,11 @@ import profile1 from "../Assets/manager.jfif";
 import profile2 from "../Assets/teketay.jfif";
 import profile3 from "../Assets/k.jfif";
 import profile4 from "../Assets/profile-4.png";
-import "../Styles/Doctors.css";
+import "../Styles/Leaders.css";
 
-function Doctors() {
+function Leaders() {
   return (
-    <div className="doctor-section" id="doctors">
+    <div className="doctor-section" id="leaders">
       <div className="dt-title-content">
         <h3 className="dt-title">
           <span>የደብሩ ሰበካ ጉባኤ አስተዳደር</span>
@@ -47,4 +47,4 @@ function Doctors() {
   );
 }
 
-export default Doctors;
+export default Leaders;

@@ -7,7 +7,7 @@ import LoginModal from "../../LoginModal";
 import SignUpModal from "../../SignUpModal";
 import "../../../Styles/Navbar.css";
 import { HashLink } from "react-router-hash-link";
-
+import Logo from "../../../Assets/logo.PNG"; 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
@@ -44,26 +44,33 @@ function Navbar() {
 
       {/* Logo */}
       <h1 className="navbar-title">
-        <Link to="/">
+        {/* <Link to="/">
         ኦርቶዶክስ ሰንበት ትምህርት ቤት <span className="navbar-sign">+</span>
-        </Link>
+        </Link> */}
+        <div className="navbar-logo">
+  <Link to="/">
+    <img
+      src={Logo}
+      alt="ኦርቶዶክስ ሰንበት ትምህርት ቤት"
+      className="navbar-logo-img"
+    />
+  </Link>
+</div>
       </h1>
 
       {/* Desktop Menu */}
       <ul className="navbar-items">
-        <li><Link to="/" className="navbar-links">ቀዳሚ ገጽ</Link></li>
-        <li><Link to="/Courses" className="navbar-links">ትምህርቶች</Link></li>
-        <li><a href="#reviews" className="navbar-links">አዲስ መረጃዎች</a></li>
-        <li><a href="#students" className="navbar-links">የተማሪዎች</a></li>
-        <li><a href="#teachers" className="navbar-links">አስተማሪዎች</a></li>
-        <li><a href="#admin" className="navbar-links">አስተዳዳሪዎች</a></li>
-        <li><a href="#about" className="navbar-links">ስለኛ</a></li>
+        <li><HashLink smooth to="/" className="navbar-links">ቀዳሚ ገጽ</HashLink></li>
+        <li><HashLink smooth to="/Courses" className="navbar-links">ትምህርቶች</HashLink></li>
+        <li><HashLink smooth to="/NewsSection" className="navbar-links">አዲስ መረጃዎች</HashLink></li>  
+        <li><HashLink smooth to="/#video" className="navbar-links">ቪዲዮ</HashLink></li>
+        <li><HashLink smooth to="/#about" className="navbar-links">ስለኛ</HashLink></li>
         {/* <li><a href="#contactus" className="navbar-links">ያግኙን</a></li> */}
-        <li> <HashLink  className="navbar-links" smooth to="/#contactus">ያግኙን</HashLink></li>
+        <li> <HashLink smooth to="/#contactus" className="navbar-links" >ያግኙን</HashLink></li>
       </ul>
 
       {/* Auth Buttons (Desktop) */}
-      <div className="auth-buttons ms-auto">
+      <div className="auth-buttons ms-auto navbar-items">
         <Link onClick={() => setShowSignupModal(true)} className="navbar-links butns">ተመዝገብ</Link>
         <Link onClick={() => setShowSignin(true)} className="navbar-links butns">ግባ</Link>
       </div>
@@ -76,9 +83,9 @@ function Navbar() {
 
         <ul className="mobile-navbar-links">
           <li><Link onClick={() => setNav(false)} to="/">ቀዳሚ ገጽ</Link></li>
-          <li><Link onClick={() => setNav(false)} to="/Courses">ትምህርቶች</Link></li>
-          <li><a onClick={() => setNav(false)} href="#about">ስለኛ</a></li>
-          <li><a onClick={() => setNav(false)} href="#reviews">እይታ</a></li>
+          <li><Link onClick={() => setNav(false)} to="/Courses">ትምህርቶች</Link></li>         
+          <li><a onClick={() => setNav(false)} href="#reviews">ቪዲዮ</a></li>
+           <li><a onClick={() => setNav(false)} href="#about">ስለኛ</a></li>
           <li><a onClick={() => setNav(false)} href="#contactus">ያግኙን</a></li>
           <li><Link onClick={() => { setNav(false); setShowSignupModal(true); }} className="butns">ተመዝገብ</Link></li>
           <li><Link onClick={() => { setNav(false); setShowSignin(true); }} className="butns">ግባ</Link></li>

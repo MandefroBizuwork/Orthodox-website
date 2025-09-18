@@ -37,8 +37,9 @@
 }
 .info-title-content {
     margin: 64px 0 128px 0;
-    background-color: #0A7163;
+    background-color: #fff;
     padding:  5px;
+    color: black;
 }
 .info-title {
     font-family: 'Poppins', sans-serif;

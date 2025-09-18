@@ -3,7 +3,7 @@ import React from 'react'
 import  Bs from "../Assets/church.jfif"
 function Featured() {
   return (
-    <section className="featured my-2 shadow  ">
+    <section className="featured my-2   ">
     <h2 className="mb-5 fw-bold">የደብሩ ሰንበት ት/ቤት</h2>
 
  <div className=''>

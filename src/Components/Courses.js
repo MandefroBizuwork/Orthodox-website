@@ -20,7 +20,7 @@ function Courses() {
           <div className="col-sm-6 col-lg-4">
             <div className="card h-100 border-0 shadow text-center p-3">
               <i className="bi bi-book text-primary fs-1 mb-3"></i>
-              <h5 className="fw-bold">መጽሐፍ ቅዱስ</h5>
+              <h5 className="fw-bold">የመጽሐፍ ቅዱስ ጥናት</h5>
               <p className="text-muted">
                 በመጽሐፍ ቅዱስ ውስጥ ያሉ ታሪኮችን፣ ትምህርቶችን እና መልእክቶችን በግልጽ መንገድ እንማራለን።
               </p>
@@ -42,7 +42,7 @@ function Courses() {
           <div className="col-sm-6 col-lg-4">
             <div className="card h-100 border-0 shadow text-center p-3">
               <i className="bi bi-heart text-danger fs-1 mb-3"></i>
-              <h5 className="fw-bold">መንፈሳዊ ትምህርቶች</h5>
+              <h5 className="fw-bold">መንፈሳዊ ጽሁፎች</h5>
               <p className="text-muted">
                 የእምነት፣ የስነምግባር እና የመንፈሳዊ ሕይወት መሠረቶችን እንዲቆሙ ትምህርቶች እንሰጣለን።
               </p>
@@ -61,26 +61,9 @@ function Courses() {
           </div>
 
           {/* Course 5 */}
-          <div className="col-sm-6 col-lg-4">
-            <div className="card h-100 border-0 shadow text-center p-3">
-              <i className="bi bi-emoji-smile text-info fs-1 mb-3"></i>
-              <h5 className="fw-bold">ሕይወታዊ ትምህርቶች</h5>
-              <p className="text-muted">
-                በዕለታዊ ሕይወት እንዲረዱና እንዲቆሙ የሚረዱ ትምህርቶች በቀላሉ እንዲማሩ እንደግፋለን።
-              </p>
-            </div>
-          </div>
-
+         
           {/* Course 6 */}
-          <div className="col-sm-6 col-lg-4">
-            <div className="card h-100 border-0 shadow text-center p-3">
-              <i className="bi bi-journal-text text-secondary fs-1 mb-3"></i>
-              <h5 className="fw-bold">እንቅስቃሴዎች</h5>
-              <p className="text-muted">
-                በተማሪዎች ላይ አብራሪ የሆኑ እንቅስቃሴዎችን በመካፈል የተሻለ ልምድና እውቀት እንዲኖራቸው እናግዛለን።
-              </p>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
