@@ -60,33 +60,38 @@
   /* background: #0EA08A; */
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  padding: 100px;
-   padding-top: 10px;
-  max-width: 1000px;
-      margin: 220px auto;
-  gap: 30px;
+  padding: 10px;
 
-  z-index: 1;
+  max-width: 1000px;
+  margin: 200px auto;
+  gap: 30px;
+  text-align: left;
+  z-index: 1000000;
   opacity: 1;
   color: white; /* make all text visible */
 }
 @media (max-width: 576px) {
   .carousel-card {
-    margin-top: 200px !important;
+    margin-top: 100px !important;
     padding: 20px; /* optional: reduce padding on small screens */
+
   }
+  /* .carousel-content .description{
+    display: none;
+  } */
 }
 .carousel-content .headline {
-  font-size: 14px;
+  font-size: 50px;
   color: #f1f1f1;
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .carousel-content .title {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 2px;
   margin-bottom: 16px;
   color: #fff; /* strong white */
 }
@@ -96,10 +101,11 @@
   font-weight: 500;
   margin-bottom: 12px;
   color: #f8f8f8;
+  letter-spacing: 2px;
 }
 
 .carousel-content .details {
-  font-size: 16px;
+  font-size: 40px;
   font-weight: normal;
   margin-bottom: 20px;
   color: #e0e0e0;

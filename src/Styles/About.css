@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;   
     gap: 24px;
-    background: white;   
+    background: white;  
+  
   
 }
 .abautlist{
@@ -23,9 +24,15 @@ list-style-type:  disc !important;
     max-width: 100%;
     text-align: center;
 }
+
 .about-image1 {
     width: 80%;
-    height: auto;
+    height: auto;  
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+
 }
 /* Text */
 .about-text-content {

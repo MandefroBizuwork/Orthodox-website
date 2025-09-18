@@ -1,30 +1,47 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import Navbar from "../Components/SharedLayout/Header/Navbar";
 import Hero from "../Components/Hero";
 import Info from "../Components/Info";
 import About from "../Components/About";
-import BookAppointment from "../Components/BookAppointment";
+import Contactus from "../Components/Contactus";
 import Reviews from "../Components/Reviews";
-import Doctors from "../Components/Doctors";
-import Footer from "../Components/Footer";
+
+import Footer from "../Components/SharedLayout/Footer/Footer";
 import Featured from "../Components/Featured";
-
-
-
 
 function Home() {
   return (
-<div className="home-section ">
+    <div className="home-section">
+      {/* <header>
+        <Navbar />
+      </header> */}
 
-      <Navbar />
-      <Hero />      
-      <Info />
-      <Featured/>
-      <About />
-      <BookAppointment />
-      {/* <Reviews /> */}
-      <Doctors />
-      <Footer />
+      <main>
+        <Hero />
+        <section id="info" className="py-5">
+          <Info />
+        </section>
+
+        <section id="about" className="py-5 bg-light">
+          <About />
+        </section>
+
+        <section id="featured" className="py-5">
+          <Featured />
+        </section>
+
+      
+
+        {/* <section id="reviews" className="py-5">
+          <Reviews />
+        </section> */}
+
+        <section id="contact" className="py-5 bg-light">
+          <Contactus />
+        </section>
+      </main>
+
+
     </div>
   );
 }

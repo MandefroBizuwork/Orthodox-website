@@ -5,28 +5,34 @@ import "../Styles/About.css";
 
 function About() {
   return (
-    <div className="about-section shadow my-2" id="about">
-      <div className="about-image-content">
-        <img src={Doctor} alt="Doctor Group" className="about-image1" />
+    <div className="about-section shadow my-2 py-5" id="about">
+      <div className="about-image-content col-lg-6 mb-4 mb-lg-0">
+       
+        <img src={Doctor} alt="Doctor Group" className="about-image1 img-fluid rounded shadow" />
       </div>
 
-      <div className="about-text-content">
+      <div className="about-text-content bg-opacity-50 p-5 rounded" style={{backgroundColor:"#a2bfdd80"}}>
         <h3 className="about-title">
           <span>ስለ ማኅበሩ መሰረታዊ መረጃዎች</span>
         </h3>
+        <p className="text-lg text-gray-700 mb-6 leading-relaxed" style={{marginTop:"30px"}}>
+          የኦርቶዶክስ ሰንበት ትምህርት ቤታችን በማህበረሰቡ ልጆች እምነታቸውንና እውቀታቸውን
+          በአንድነት እንዲያጠናክሩ ተቋቁሟል። በመጽሐፍ ቅዱስ፣ በቅዱሳን ታሪክ እና
+          በቤተክርስቲያን ባህል ላይ የተመሠረተ ትምህርት እንዲያገኙ በትጋት እንሠራለን።
+        </p>
         <SolutionStep
           title="ስያሜ"
           description="ማኅበረ ቅዱሳን እግዚአብሔር ያከበራቸው የነቢያት፣ የሐዋርያት፣ የጻድቃንና የሰማዕታት በአጠቃላይ የቅዱሳን ገድል፣ ትሩፋትና አማላጅነት የሚዘከርበት በመሆኑ ‹‹ማኅበረ ቅዱሳን›› የሚል ስያሜውን አግኝቷል፡፡"
         />
 
         <SolutionStep
-          title="የማኅበሩ ርእይ"
-          description="ቤተ ክርስቲያን ሁለንተናዊ የመሪነት ሚናዋን ስትወጣ ማየት::"
+          title="ራእይ"
+          description="በእምነት የተመሠረተ፣ በትምህርት የተጠናከረ ማህበረሰብ መፍጠር።"
         />
 
         <SolutionStep
           title="ተልእኮ"
-          description="ለቤተ ክርስቲያን ተልእኮ መሳካት እና ለሕልውናዋ የሚተጋ፣ የተደራጀ ፣ ምሉዕ ኦርቶዶክሳዊ፤ ርቱዕ ዘመናዊ፤ ሁለገብ መሪ ትውልድ ማፍራት እና ማሰማራት"
+          description=" ተማሪዎች የመንፈሳዊ እና የማህበራዊ ሕይወትን አንድ በማድረግ የተሟላ እድገት እንዲያገኙ መርዳት።"
         />
 
         <p className="about-description">
@@ -44,7 +50,9 @@ function About() {
           <li>ዓለም አቀፍ ግንኙነትና የትብብር አገልግሎትን መርሕ ያደረገ የኦርቶዶክሳውያን ኢኮኖሚያዊ፣ ማኅበራዊና ፖለቲካዊ ተሳትፎ ማሳደግ፣</li>
           </ul>
        </p>
-
+ <button className="btn btn-primary">
+          ተጨማሪ ይመልከቱ
+        </button>
       </div>
     </div>
   );

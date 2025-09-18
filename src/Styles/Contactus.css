@@ -1,9 +1,9 @@
 .ba-section {
     padding: 32px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 24px; */
     background-color: white;
 }
 /* Image */
