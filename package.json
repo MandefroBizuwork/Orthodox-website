@@ -1,8 +1,9 @@
 {
-  "name": "Sundayschool",
+  "name": "sunday-school",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alkaison.github.io/Sundayschool/",
+ "_homepage": "https://MandefroBizuwork.github.io/sunday-school/",
+
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^7.0.1",
@@ -12,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.8",
+    "ethiopian-date": "^0.0.6",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^18.3.1",

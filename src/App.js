@@ -14,6 +14,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Courses from "./Components/Courses";
 import CommonLayout from "./Components/SharedLayout/CommonLayout";
 import NewsSection from "./Components/NewsSection";
+import Videos from "./Components/Videos";
 
 function App() {
   return (
@@ -26,12 +27,13 @@ function App() {
             <Route index element={<Home />} />
             <Route path="courses" element={<Courses />} />
               <Route path="NewsSection" element={<NewsSection />} />            
-            <Route path="legal" element={<Legal />} />
+            <Route path="Video" element={<Videos />} />
             <Route path="appointment" element={<Appointment />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Router>
+   
     </div>
   );
 }

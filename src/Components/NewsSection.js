@@ -21,7 +21,7 @@ const SAMPLE_ARTICLES = [
     content:
       "ዝርዝር ጽሑፍ — ይህ የእድል እና መንፈሳዊ ስርአት ክስተት በትምህርት ቤታችን የተደረገ ሲሆን ተማሪዎች ለተለያዩ እምነታዊ እና ባህላዊ ጉዳዮች እውቀት አግኝተዋል።",
     image:L1,
-    category: "Events",
+    category: "ክንውን",
     date: "2025-09-12T10:00:00Z",
   },
   {
@@ -31,7 +31,7 @@ const SAMPLE_ARTICLES = [
     content:
       "ዝርዝር ጽሑፍ — እንኳን ደህና መጡ፤ ይህ ኮርስ የጥናት ማዕከል እና የመማር መንገድ ነው።",
     image:L2,
-    category: "Courses",
+    category: "ትምህርት",
     date: "2025-09-01T08:30:00Z",
   },
   {
@@ -41,7 +41,7 @@ const SAMPLE_ARTICLES = [
     content:
       "ዝርዝር ጽሑፍ — የመዝሙር አቅምን ለማሳደግ እንቅስቃሴ የተዘጋጅቷል።",
     image:L3,
-    category: "Music",
+    category: "መዝሙር",
     date: "2025-08-25T16:15:00Z",
   },
    {
@@ -52,7 +52,7 @@ const SAMPLE_ARTICLES = [
       "ዝርዝር ጽሑፍ — የመዝሙር አቅምን ለማሳደግ እንቅስቃሴ የተዘጋጅቷል።",
     image:
       L4,
-    category: "Music",
+    category: "መዝሙር",
     date: "2025-08-25T16:15:00Z",
   },
 ];

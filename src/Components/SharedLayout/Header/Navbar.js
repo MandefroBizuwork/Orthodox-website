@@ -63,7 +63,7 @@ function Navbar() {
         <li><HashLink smooth to="/" className="navbar-links">ቀዳሚ ገጽ</HashLink></li>
         <li><HashLink smooth to="/Courses" className="navbar-links">ትምህርቶች</HashLink></li>
         <li><HashLink smooth to="/NewsSection" className="navbar-links">አዲስ መረጃዎች</HashLink></li>  
-        <li><HashLink smooth to="/#video" className="navbar-links">ቪዲዮ</HashLink></li>
+        <li><HashLink smooth to="/Video" className="navbar-links">ቪዲዮ</HashLink></li>
         <li><HashLink smooth to="/#about" className="navbar-links">ስለኛ</HashLink></li>
         {/* <li><a href="#contactus" className="navbar-links">ያግኙን</a></li> */}
         <li> <HashLink smooth to="/#contactus" className="navbar-links" >ያግኙን</HashLink></li>
